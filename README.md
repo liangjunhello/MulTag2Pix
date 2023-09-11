@@ -41,5 +41,5 @@ python main.py --test --thread=1 --batch=8 --convnet_dev_skeleton_Adain  --data_
 ```
 Saved images will be placed in results/convnet_dev_skeleton_Adain.
 
-We provide a test set of multi-player line coloring at the link:( https://pan.baidu.com/s/1QsfnSUYJlO6qHSIvj4ec_w?pwd=qb6u)Extraction code：qb6u
+We provide a test set of multi-player line coloring at the link:( https://pan.baidu.com/s/1QsfnSUYJlO6qHSIvj4ec_w?pwd=qb6u)  Extraction code：qb6u
 
