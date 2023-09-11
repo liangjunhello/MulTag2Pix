@@ -19,7 +19,16 @@
 - keras == 2.13.1
 - tensorflow == 2.13.0
 
+## dataset
+We create our dataset based on the Danbooru2020 , which is a large-scale collection of anime-style images. Each illustration contains detailed information on the number of characters, character features (e.g., hair color, eye color), clothing, accessories, and background tags.
+
+**Multi-character data selection.** According to our problem definition, we select some multi-character colored images from the dataset, retaining the corresponding color tags (e.g., blue_eyes, red_hair) and clothing and accessory tags (e.g., hat, skirt, bow).We focus on selecting images with two or more characters in a simple background, ensuring the dataset tags include multiple character hair colors and eye colors in the text tags. It is worth mentioning that our dataset does not discard images with inconsistent numbers of characters, eye colors or hair text tags. For example, when there are two characters in the image but only one eye color text tag (such as black_eyes), we default both characters' eye colors to be the same, both black. This is widely present in the real world, so we retained it. Ultimately, we extract 10,155 multi-character high-definition anime images for training and 2,916 images for testing.
+
+**Single-character data selection.** To improve the detail and quality of coloring each character in multi-character line art, we also select 8,847 single-character color images with simple backgrounds from the dataset, each with complete corresponding tag information. Among them, 6,200 images are used for training, and the rest are used for testing. Additionally, we use lbpcascade_animeface to crop clear facial and hair contours from single-character colored images, totaling 941 images for training.
+All images used in our study are 512×512 in size. Since many images in the dataset have black or white borders, we remove the borders from the selected images by mirror padding.
+
 ## Training 
+
 ```
 python main.py --epoch=300 --input_size=512 --batch_size=4 --model=convnet_dev_skeleton_Adain --cit_cvt_weight 40 50 10 --two_step_epoch=10 --brightness_epoch=24 --save_all_epoch=24  --tag_txt='tags_single.txt'
 ```
