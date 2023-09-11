@@ -28,7 +28,7 @@ We create our dataset based on the Danbooru2020 , which is a large-scale collect
 All images used in our study are 512×512 in size. Since many images in the dataset have black or white borders, we remove the borders from the selected images by mirror padding.
 
 The tag files of the training set and test set we used have been given. You can find pictures consistent with the data set we use through the unique ID number of the picture. Of course, you can also filter the data yourself according to your needs. Then make your own data set by extracting line drawings and generating skeleton maps based on preprocessing.
-![image](dataset.jpg)
+
 ## Training 
 
 ```
