@@ -1,6 +1,6 @@
 # MulTag2Pix: Tag-adaptive Multi-character Line Art Colorization with Text Tag
 ![image](show.jpg)
-**[Title]** MulTag2Pix: Tag-adaptive Multi-character Line Art Colorization with Text Tag
+**[Title]** MulTag2Pix: Tag-adaptive Multi-character Line Art Colorization with Text Tag.
 
 **[Authors]** Jun Liang, Rui Luo, Nuo Zhou and Hai Su.
 
