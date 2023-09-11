@@ -1,4 +1,5 @@
 # MulTag2Pix
+![image](show.jpg)
 
 # Prerequisite
 - pytorch == 1.9.0
